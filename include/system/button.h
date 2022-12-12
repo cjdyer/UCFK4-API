@@ -17,7 +17,7 @@ typedef struct button_s {
  * @param mode either `INPUT` or `INPUT_PULLUP` depending on the type of button
  * @return `button_t` object to control the button with
  */
-extern button_t button_construct(port_t port, uint8_t port_bit, pin_mode_t mode);
+extern const button_t button_construct(port_t port, uint8_t port_bit, pin_mode_t mode);
 
 /**
  * @brief Updates the button's state

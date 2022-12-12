@@ -4,5 +4,5 @@
 
 #include "drivers/button1.h"
 
-button_t button1 = button_construct(PORT_D, 7, INPUT);
+#define button1 button_construct(PORT_D, 7, INPUT);
 

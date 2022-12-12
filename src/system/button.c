@@ -7,7 +7,7 @@
  * @param mode either `INPUT` or `INPUT_PULLUP` depending on the type of button
  * @return `button_t` object to control the button with
  */
-inline button_t button_construct(const port_t port, const uint8_t port_bit, const pin_mode_t mode)
+inline const button_t button_construct(const port_t port, const uint8_t port_bit, const pin_mode_t mode)
 {
     return (button_t) {
         .pin = define_pin(port, port_bit, mode)
